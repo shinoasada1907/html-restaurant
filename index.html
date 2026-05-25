@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>Miyabi Matcha Bistro | Tinh Hoa Trà Đạo & Ẩm Thực Nhật Bản</title>
+    <meta name="description" content="Trải nghiệm tinh hoa ẩm thực truyền thống Kyoto kết hợp cùng hương vị Uji Matcha thượng hạng tại Miyabi Matcha Bistro. Không gian Zen tinh tế và sang trọng. Đặt bàn ngay!">
+    <meta name="keywords" content="nhà hàng nhật bản, matcha, mì soba trà xanh, trà đạo, wagashi, uji matcha, miyabi matcha bistro, ẩm thực nhật bản">
+    <link rel="canonical" href="https://miyabimatcha.vn">
+    
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Miyabi Matcha Bistro | Ẩm Thực Nhật Bản Cao Cấp">
+    <meta property="og:description" content="Trải nghiệm trà đạo và ẩm thực truyền thống Kyoto kết hợp hương vị Matcha hảo hạng.">
+    <meta property="og:image" content="assets/hero_dish.png">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Falling Green Tea Leaves Container -->
+    <div class="leaf-container"></div>
+
+    <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+    <header id="siteHeader">
+        <div class="container header-container">
+            <!-- Brand Logo -->
+            <a href="#" class="logo" id="logoLink">
+                <div class="logo-symbol">雅</div>
+                <div class="logo-text">
+                    <span class="logo-title">Miyabi Matcha</span>
+                    <span class="logo-subtitle">Kyoto Gastronomy</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Trang Chủ</a></li>
+                <li><a href="#philosophy" class="nav-link">Triết Lý Zen</a></li>
+                <li><a href="#menu" class="nav-link">Thực Đơn</a></li>
+                <li><a href="#experience" class="nav-link">Trải Nghiệm</a></li>
+                <li><a href="#reservation" class="nav-link">Đặt Bàn</a></li>
+            </ul>
+
+            <!-- Header CTA -->
+            <div class="header-cta">
+                <a href="#reservation" class="btn btn-primary" id="headerCtaBtn">Đặt Bàn Ngay</a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="hamburger" id="hamburgerMenu" aria-label="Mở menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+           HERO SECTION: THE ZEN OF MATCHA & GASTRONOMY
+           ========================================================================== -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <!-- Text Content -->
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-seedling"></i>
+                        Est. 2026 • Tinh Hoa Ẩm Thực Kyoto
+                    </div>
+                    <h1 class="hero-title">
+                        Nơi giao thoa giữa<br>
+                        <span>Trà Đạo</span> & <span>Ẩm Thực</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Hành trình trải nghiệm nghệ thuật Umami độc bản, kết hợp tinh hoa ẩm thực truyền thống Nhật Bản cùng hương vị thanh khiết của bột trà xanh Uji hảo hạng được xay bằng cối đá cổ truyền.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#reservation" class="btn btn-primary" id="heroBookBtn">Đặt Bàn Chiêu Đãi</a>
+                        <a href="#menu" class="btn btn-outline" id="heroMenuBtn">Xem Thực Đơn</a>
+                    </div>
+                </div>
+
+                <!-- Floating Visuals -->
+                <div class="hero-visual reveal" style="transition-delay: 0.2s;">
+                    <div class="hero-circle-backdrop"></div>
+                    <div class="hero-image-wrapper">
+                        <img src="assets/hero_dish.png" alt="Mì Matcha Soba truyền thống" class="hero-image" id="heroMainImage">
+                    </div>
+                    <!-- Micro Interactive Floating Badge -->
+                    <div class="hero-leaf-badge" id="floatingBadge">
+                        <div class="badge-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="badge-text">
+                            <h4>Uji Matcha Thượng Hạng</h4>
+                            <p>Nhập khẩu trực tiếp từ Kyoto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           PHILOSOPHY SECTION: THE ART OF ZEN
+           ========================================================================== -->
+        <section id="philosophy" class="philosophy">
+            <div class="container philosophy-grid">
+                <!-- Zen Image Frame -->
+                <div class="philosophy-visual reveal">
+                    <div class="philosophy-image-frame">
+                        <img src="assets/zen_garden.png" alt="Khu vườn Thiền Nhật Bản tĩnh lặng" class="philosophy-image" id="philosophyImage">
+                    </div>
+                    <!-- Small overlaid info card -->
+                    <div class="philosophy-card" id="philosophyCard">
+                        <h3>Triết Lý Wabi-Sabi</h3>
+                        <p>Tìm thấy vẻ đẹp hoàn mỹ trong những điều giản đơn, mộc mạc và tĩnh lặng nhất của tự nhiên.</p>
+                    </div>
+                </div>
+
+                <!-- Narrative Content -->
+                <div class="philosophy-content reveal" style="transition-delay: 0.2s;">
+                    <span class="section-subtitle">Tâm Niệm Của Chúng Tôi</span>
+                    <h2 class="section-title">Nghệ Thuật Cân Bằng Giữa Hương & Vị</h2>
+                    <p class="philosophy-text">
+                        Tại <strong>Miyabi Matcha Bistro</strong>, mỗi món ăn là một tác phẩm nghệ thuật cân bằng giữa vị ngọt thanh, vị đắng dịu từ trà xanh Uji Matcha nguyên chất và vị ngọt đằm tự nhiên (Umami) từ những nguyên liệu tươi ngon nhất trong ngày.
+                    </p>
+                    <p class="philosophy-text" style="margin-bottom: 3rem;">
+                        Chúng tôi tôn trọng dòng chảy tự nhiên của thời gian. Toàn bộ thực đơn được thiết kế theo mùa (Shun), đảm bảo từng cọng mì soba, từng miếng cá sashimi đều mang trọn vẹn hương sắc tinh khiết của đất trời Kyoto.
+                    </p>
+
+                    <!-- Core Features Icons Grid -->
+                    <div class="philosophy-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+                            <div class="feature-text">
+                                <h4 class="feature-title">Xay Đá Thủ Công</h4>
+                                <p class="feature-desc">Matcha được xay chậm bằng cối đá granite để giữ trọn vẹn hương vị tinh dầu thanh tao.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                            <div class="feature-text">
+                                <h4 class="feature-title">Nguyên Liệu Theo Mùa</h4>
+                                <p class="feature-desc">Hải sản và nông sản được vận chuyển trực tiếp bằng đường hàng không mỗi ngày.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           SIGNATURE MENU SECTION: FILTERABLE GALLERY
+           ========================================================================== -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="reveal" style="text-align: center;">
+                    <span class="section-subtitle">Tinh Hoa Mỹ Vị</span>
+                    <h2 class="section-title center">Thực Đơn Chữ Ký</h2>
+                </div>
+
+                <!-- Interactive Filter Buttons -->
+                <div class="menu-filter-container reveal" style="transition-delay: 0.1s;">
+                    <button class="filter-btn active" data-filter="all" id="btnFilterAll">Tất Cả</button>
+                    <button class="filter-btn" data-filter="mains" id="btnFilterMains">Món Chính</button>
+                    <button class="filter-btn" data-filter="drinks" id="btnFilterDrinks">Thức Uống</button>
+                    <button class="filter-btn" data-filter="desserts" id="btnFilterDesserts">Bánh Ngọt</button>
+                </div>
+
+                <!-- Dynamic Grid -->
+                <div class="menu-grid reveal" style="transition-delay: 0.2s;">
+                    <!-- Menu Item 1: Matcha Soba -->
+                    <div class="menu-card" data-category="mains" id="menuItemMatchaSoba">
+                        <div class="menu-card-image">
+                            <img src="assets/hero_dish.png" alt="Mì Lạnh Matcha Soba" class="menu-img">
+                            <span class="menu-tag">Món Ăn Chữ Ký</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-header">
+                                <h3 class="menu-card-title">Mì Lạnh Uji Matcha Soba</h3>
+                                <span class="menu-card-price">280k</span>
+                            </div>
+                            <p class="menu-card-desc">
+                                Sợi mì làm từ kiều mạch Nhật Bản hảo hạng hòa quyện bột matcha Uji nguyên chất, ăn kèm nước dùng Dashi thanh mát, củ cải mài, wasabi và tôm Tempura giòn tan.
+                            </p>
+                            <div class="menu-card-footer">
+                                <div class="menu-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <div class="order-btn">Đặt món <i class="fa-solid fa-chevron-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 2: Kaiseki Set -->
+                    <div class="menu-card" data-category="mains" id="menuItemKaiseki">
+                        <div class="menu-card-image">
+                            <img src="assets/zen_garden.png" alt="Miyabi Kaiseki Omakase" class="menu-img">
+                            <span class="menu-tag">Giới Hạn</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-header">
+                                <h3 class="menu-card-title">Kaiseki Omakase Set</h3>
+                                <span class="menu-card-price">1,850k</span>
+                            </div>
+                            <p class="menu-card-desc">
+                                Bữa ăn nhiều món truyền thống được chuẩn bị tỉ mỉ đại diện cho hương vị tinh tế nhất của mùa hiện tại, dùng kèm xốt matcha nghệ thuật độc quyền của bếp trưởng.
+                            </p>
+                            <div class="menu-card-footer">
+                                <div class="menu-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <div class="order-btn">Đặt món <i class="fa-solid fa-chevron-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 3: Matcha Wagashi Set -->
+                    <div class="menu-card" data-category="desserts" id="menuItemWagashi">
+                        <div class="menu-card-image">
+                            <img src="assets/matcha_wagashi.png" alt="Cặp Bánh Wagashi & Matcha" class="menu-img">
+                            <span class="menu-tag">Trà Đạo</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-header">
+                                <h3 class="menu-card-title">Matcha & Wagashi Set</h3>
+                                <span class="menu-card-price">220k</span>
+                            </div>
+                            <p class="menu-card-desc">
+                                Một bát bột matcha Uji đánh bọt mịn màng truyền thống, dùng kèm một cặp bánh ngọt Wagashi nặn tay thủ công mô phỏng hình ảnh các loài hoa theo mùa.
+                            </p>
+                            <div class="menu-card-footer">
+                                <div class="menu-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>4.8</span>
+                                </div>
+                                <div class="order-btn">Đặt món <i class="fa-solid fa-chevron-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 4: Uji Float -->
+                    <div class="menu-card" data-category="drinks" id="menuItemMatchaFloat">
+                        <div class="menu-card-image">
+                            <img src="assets/tea_ceremony.png" alt="Trà Uji Matcha Float" class="menu-img">
+                            <span class="menu-tag">Yêu Thích</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-header">
+                                <h3 class="menu-card-title">Kem Uji Matcha Float</h3>
+                                <span class="menu-card-price">150k</span>
+                            </div>
+                            <p class="menu-card-desc">
+                                Trà xanh nguyên chất lạnh sảng khoái, phủ lên trên một viên kem gelato matcha nhà làm đậm đà siêu mịn và một chút đậu đỏ Azuki ninh nhừ thơm ngậy.
+                            </p>
+                            <div class="menu-card-footer">
+                                <div class="menu-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                                <div class="order-btn">Đặt món <i class="fa-solid fa-chevron-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           TEA CEREMONY EXPERIENCE SECTION (PARALLAX BANNER)
+           ========================================================================== -->
+        <section id="experience" class="experience">
+            <div class="container reveal">
+                <span class="section-subtitle" style="color: var(--color-gold-shinto);">Khám Phá Văn Hóa</span>
+                <h2>Nghệ Thuật Trà Đạo Cổ Truyền</h2>
+                <p>
+                    Hãy tạm rời xa nhịp sống hối hả ngoài kia để bước chân vào phòng chiếu Tatami tĩnh lặng. Tại đây, bạn sẽ được thưởng lãm màn trình diễn trà đạo tinh tế từ những bậc thầy trà học, lắng nghe tiếng chổi tre Chasen khua nhẹ trong lòng bát sứ đen truyền thống, mang lại cảm giác bình yên thư thái tuyệt đối.
+                </p>
+                <a href="#reservation" class="btn btn-gold" id="experienceReserveBtn">Đặt Chỗ Trải Nghiệm</a>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           RESERVATIONS: WASHI CARD BOOKING FORM
+           ========================================================================== -->
+        <section id="reservation" class="reservation">
+            <div class="container reservation-grid">
+                <!-- Contact & Info -->
+                <div class="reservation-info reveal">
+                    <span class="section-subtitle">Chờ Đón Bạn</span>
+                    <h2>Đặt Bàn Trước Để Nhận Không Gian Đẹp</h2>
+                    <p>
+                        Để đảm bảo trải nghiệm thưởng ẩm và trà đạo Wabi-sabi của bạn diễn ra hoàn hảo nhất, chúng tôi khuyến nghị quý khách đặt chỗ trước tối thiểu 2 tiếng trước giờ dùng bữa.
+                    </p>
+
+                    <div class="reservation-details">
+                        <div class="r-detail-item">
+                            <div class="r-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="r-text">
+                                <h4>Địa Chỉ</h4>
+                                <p>18 Đường Hoa Trà, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        <div class="r-detail-item">
+                            <div class="r-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="r-text">
+                                <h4>Hotline Hỗ Trợ</h4>
+                                <p>+84 (0) 90 123 4567 • +84 (0) 28 8888 9999</p>
+                            </div>
+                        </div>
+                        <div class="r-detail-item">
+                            <div class="r-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="r-text">
+                                <h4>Giờ Mở Cửa (Zen Hours)</h4>
+                                <p>10:00 AM - 10:00 PM (Hàng ngày, kể cả ngày lễ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Washi Card Form -->
+                <div class="reservation-card reveal" style="transition-delay: 0.2s;">
+                    <h3 class="form-title">Yêu Cầu Đặt Bàn</h3>
+                    <form id="bookingForm" class="reservation-form">
+                        <!-- Name input -->
+                        <div class="form-group">
+                            <label for="bName" class="form-label">Họ và Tên</label>
+                            <input type="text" id="bName" class="form-control" placeholder="Nguyễn Văn A" required>
+                        </div>
+                        <!-- Phone input -->
+                        <div class="form-group">
+                            <label for="bPhone" class="form-label">Số Điện Thoại</label>
+                            <input type="tel" id="bPhone" class="form-control" placeholder="0901234567" required>
+                        </div>
+                        <!-- Email input -->
+                        <div class="form-group">
+                            <label for="bEmail" class="form-label">Địa Chỉ Email</label>
+                            <input type="email" id="bEmail" class="form-control" placeholder="a@gmail.com" required>
+                        </div>
+                        <!-- Guests selection -->
+                        <div class="form-group">
+                            <label for="bGuests" class="form-label">Số Khách</label>
+                            <select id="bGuests" class="form-control" required>
+                                <option value="1">1 Người</option>
+                                <option value="2" selected>2 Người (Khuyên dùng)</option>
+                                <option value="3">3 Người</option>
+                                <option value="4">4 Người</option>
+                                <option value="5-8">5 - 8 Người (Phòng Riêng)</option>
+                                <option value="9+">Trên 8 Người</option>
+                            </select>
+                        </div>
+                        <!-- Date input -->
+                        <div class="form-group">
+                            <label for="bDate" class="form-label">Ngày Dùng Bữa</label>
+                            <input type="date" id="bDate" class="form-control" required>
+                        </div>
+                        <!-- Time input -->
+                        <div class="form-group">
+                            <label for="bTime" class="form-label">Giờ Đến</label>
+                            <input type="time" id="bTime" class="form-control" required>
+                        </div>
+                        <!-- Requests input -->
+                        <div class="form-group full-width">
+                            <label for="bRequests" class="form-label">Yêu Cầu Đặc Biệt (Ví dụ: Ăn chay, Phòng tatami...)</label>
+                            <textarea id="bRequests" class="form-control" placeholder="Chúng tôi có thể chuẩn bị gì thêm cho bữa tiệc của bạn?"></textarea>
+                        </div>
+                        <!-- Submit button -->
+                        <button type="submit" id="btnSubmitReservation" class="btn btn-primary submit-btn">Xác Nhận Gửi Yêu Cầu</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       SUCCESS MODAL
+       ========================================================================== -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2 class="modal-title">Đặt Bàn Thành Công!</h2>
+            <p class="modal-desc">
+                Cảm ơn <strong><span id="modalDetailName">Quý khách</span></strong>. Miyabi Matcha Bistro đã nhận được yêu cầu đặt chỗ của bạn vào <span id="modalDetailDate">hôm nay</span> lúc <strong><span id="modalDetailTime">--:--</span></strong>. 
+            </p>
+            <p class="modal-desc" style="font-size: 0.85rem; color: #777;">
+                Nhân viên của chúng tôi sẽ gọi điện thoại hoặc gửi email xác nhận phòng trống tới bạn trong vòng 10 phút. Rất hân hạnh được phục vụ bạn!
+            </p>
+            <button class="btn btn-primary" id="closeModal" style="width: 100%;">Quay Lại Trang Chủ</button>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+    <footer id="siteFooter">
+        <div class="container footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <div class="logo-symbol" style="background-color: var(--color-gold-shinto); color: var(--color-matcha-deep);">雅</div>
+                    <div class="logo-text">
+                        <span class="logo-title">Miyabi Matcha</span>
+                        <span class="logo-subtitle" style="color: var(--color-gold-shinto);">Kyoto Gastronomy</span>
+                    </div>
+                </a>
+                <p class="footer-desc">
+                    Trải nghiệm ẩm thực và trà đạo đậm sắc màu thiền vị của Kyoto cổ kính giữa lòng Sài Gòn nhộn nhịp.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="social-icon" aria-label="Tripadvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Khám Phá</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero">Trang Chủ</a></li>
+                    <li><a href="#philosophy">Triết Lý Zen</a></li>
+                    <li><a href="#menu">Thực Đơn</a></li>
+                    <li><a href="#experience">Trải Nghiệm</a></li>
+                    <li><a href="#reservation">Đặt Bàn</a></li>
+                </ul>
+            </div>
+
+            <!-- Culinary Highlights -->
+            <div class="footer-column">
+                <h3>Thực Đơn Chính</h3>
+                <ul class="footer-links">
+                    <li><a href="#menu">Mì Lạnh Matcha Soba</a></li>
+                    <li><a href="#menu">Kaiseki Omakase Set</a></li>
+                    <li><a href="#menu">Trà Đạo & Bánh Ngọt</a></li>
+                    <li><a href="#menu">Matcha Gelato Kem Cuộn</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Hours -->
+            <div class="footer-column">
+                <h3>Liên Hệ</h3>
+                <div class="footer-info">
+                    <p><i class="fa-solid fa-location-dot" style="color: var(--color-gold-shinto); margin-right: 0.5rem;"></i> 18 Hoa Trà, Quận 1, TPHCM</p>
+                    <p><i class="fa-solid fa-phone" style="color: var(--color-gold-shinto); margin-right: 0.5rem;"></i> +84 90 123 4567</p>
+                    <p><i class="fa-solid fa-envelope" style="color: var(--color-gold-shinto); margin-right: 0.5rem;"></i> contact@miyabimatcha.vn</p>
+                    <p><i class="fa-solid fa-calendar-days" style="color: var(--color-gold-shinto); margin-right: 0.5rem;"></i> 10:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Miyabi Matcha Bistro. Thiết kế bằng cả trái tim dành cho người say mê trà Nhật.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Interaction Script -->
+    <script src="index.js"></script>
+</body>
+</html>
